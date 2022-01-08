@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+
+
+/*
+==========================
+  utilities
+==========================
+*/
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
+/*
+==========================
+  Header Styles
+==========================
+*/
+
+.header-hero {
+  background: url("images/hero.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-box {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  height: 30px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header-box .fa-search {
+  color: rgb(165, 164, 164);
+  font-size: 0.8rem;
+}
+
+.header-content input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.header-content h1,
+.header-content p {
+  text-align: center;
+}
+
+.header-content h1 {
+  padding: 40px 0 0 0;
+  font-size: clamp(2rem, 7vw, 3rem);
+}
+
+.header-content p {
+  padding: 20px 0 10px 0;
+  margin-bottom: 10px;
+  font-size: clamp(1rem, 4vw, 1.125rem)
+}
+
+
+
+
+/*
+==========================
+  Media Queries
+==========================
+*/
+
+@media screen and (min-width: 426px) and (max-width: 960px) {
+  .header-box {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .header-hero {
+    height: 350px;
+  }
+  .header-overlay,
+  .header-content {
+    height: 100%;
+  }
+  .header-box {
+    width: 500px;
+    height: 50px;
+  }
+  .header-content h1 {
+    margin-top: auto;
+  }
+  .header-content p {
+    width: 70%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+==========================
+==========================
+*/
