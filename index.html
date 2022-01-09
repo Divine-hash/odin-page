@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>The Odin Landing Page</title>
 </head>
-<body>
+<body id="top">
   <header class="header">
     <div class="header-hero">
       <div class="header-overlay">
         <div class="header-content container">
-          <h1>This Website is Awesome!</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem obcaecati, quis similique cumque, dolor quod suscipit consectetur excepturi voluptatem quos vel autem fugiat ex perferendis quisquam reprehenderit ipsa fugit maxime.</p>
+          <h1>Get An Exhilarating Vacation Experience!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Rem obcaecati, quis similique cumque, dolor quod suscipit consectetur
+          </p>
           <div class="header-box">
             <i class="fas fa-search"></i>
             <input type="search" name="search" placeholder="Search Locations">
@@ -26,7 +29,7 @@
   
   <nav class="nav">
     <div class="nav-container container">
-      <h2>Viaje.</h2>
+      <a class="logo" href="index.html"><h2>Viaje.</h2></a>
       <ul>
         <li><a href="./pages/coming-soon.html"><i class="fas fa-home"></i>Home</a></li>
         <li><a href="./pages/coming-soon.html"><i class="fas fa-info-circle"></i>About</a></li>
@@ -40,29 +43,29 @@
       <h2>Travel Locations</h2>
       <div class="flex">
         <div class="content-item box-container">
-          <img src="./images/canal.jpg" alt="">
+          <a href="./pages/coming-soon.html"> <img src="./images/canal.jpg" alt=""></a>
           <div class="discription">
             <h3>Bandara</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, laborum.</p>
-            <a href="#">More Info</a>
+            <a href="./pages/coming-soon.html">More Info</a>
           </div>
         </div>
 
         <div class="content-item box-container">
-          <img src="./images/island.jpg" alt="An island">
+          <a href="./pages/coming-soon.html"><img src="./images/island.jpg" alt="An island"></a>
           <div class="discription">
             <h3>Dreamland</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, laborum.</p>
-            <a href="#">More Info</a>
+            <a href="./pages/coming-soon.html">More Info</a>
           </div>
         </div>
 
         <div class="content-item box-container">
-          <img src="./images/mountains.jpg" alt="A mountain">
+          <a href="./pages/coming-soon.html"><img src="./images/mountains.jpg" alt="A mountain"></a>
           <div class="discription">
             <h3>Absurdistan</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, laborum.</p>
-            <a href="#">More Info</a>
+            <a href="./pages/coming-soon.html">More Info</a>
           </div>
         </div>
       </div>
@@ -99,14 +102,21 @@
   <section class="sign-up">
     <div class="container">
       <div class="sign-up-box">
-        <h3>Call to action! It's time!</h3>
-        <p>Sign up for the best vacation of your life!</p>
-        <a href="#">Sign Up</a>
+        <div class="call">
+          <h3>Call to action! It's time!</h3>
+          <p>Sign up for the best vacation of your life!</p>
+        </div>
+        <a href="./pages/coming-soon.html">Sign Up</a>
       </div>
     </div>
   </section>
 
-  <div style="height: 500px"></div>
+  <footer class="footer">
+    <div class="container">
+      <p>Copyright &copy; The Odin Project 2021</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
 </body>
 </html>
 
